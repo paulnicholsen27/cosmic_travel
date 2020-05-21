@@ -32,3 +32,5 @@ It is the year 2100 and you run an interplanetary space travel agency.  You are 
         - A mission must have a unique name, a scientist, and a planet.
         - After the mission is created, the user should be redirect to the scientist's detail page
         - Check that this is working correctly by verifying the new planet appears on the scientist's detail page
+        
+ - Build an "about" page at "/about" which should list your name and the total number of scientists and planets in your database.
