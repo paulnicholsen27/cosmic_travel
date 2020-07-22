@@ -1,0 +1,20 @@
+<div class="container">  
+    <% if flash[:success] %>   
+    <h1><%= flash[:success] %></h1>  
+<% end %>
+
+
+
+<h1>Scientist Show Page </h1>
+
+
+<p> Name: <%= @scientist.name %> </p>
+<p>Field of Study: <%= @scientist.field_of_study %> </p>
+
+
+<%= link_to 'Edit', edit_scientist_path(@scientist) %> |
+<%= link_to 'Back', scientists_path %>
+
+<%= button_to "DELETE", scientist_path(@scientist), method: :delete %>
+
+</div>

@@ -58,6 +58,7 @@ class PlanetsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to planets_url, notice: 'Planet was successfully destroyed.' }
       format.json { head :no_content }
+      # redirect_to planets_path
     end
   end
 

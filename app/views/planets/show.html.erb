@@ -17,3 +17,5 @@
 
 <%= link_to 'Edit', edit_planet_path(@planet) %> |
 <%= link_to 'Back', planets_path %>
+
+<%= button_to "DELETE", planet_path(@planet), method: :delete %>

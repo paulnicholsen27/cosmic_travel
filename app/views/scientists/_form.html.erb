@@ -1,0 +1,26 @@
+<% if flash[:my_errors] %>
+  <% flash[:my_errors].each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+<% end %>
+
+<%= form_for @scientist do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <br>
+
+    <%= f.label :field_of_study %>
+    <%= f.text_field :field_of_study %>
+
+    <br>
+
+    <%= f.submit %> 
+    <br>
+    <%= link_to 'Edit', edit_scientist_path(@scientist) %> |
+    <%= link_to 'Back', scientists_path %>
+    <br>
+<%= button_to "DELETE", scientist_path(@scientist), method: :delete %>
+
+<% end %>
